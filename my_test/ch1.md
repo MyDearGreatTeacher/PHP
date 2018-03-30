@@ -81,19 +81,19 @@
 
 PHP 支援下列八種型別： 
 
->* 純量型別  (scalar type) : 整數 integer | 浮點數 (float、double) | 布林 boolean | 字串 string | 
+ 純量型別  (scalar type) : 整數 integer | 浮點數 (float、double) | 布林 boolean | 字串 string | 
 
->* 特殊型別  (special type) :: NULL  資源  (resource) 
+ 特殊型別  (special type) :: NULL  資源  (resource) 
  
-  資料型態為 NULL 的變數:只有一種值－常數 NULL 
+>* 資料型態為 NULL 的變數:只有一種值－常數 NULL 
 
-  資源(resource)資料型態::代表的是一種特殊值，用來指向 PHP 程式的外部資源
+>*  資源(resource)資料型態::代表的是一種特殊值，用來指向 PHP 程式的外部資源
 ```
 $my_resource = mysql_connect();
 ```
 
 
->* 複合型別 (compound type) ::陣列  (array) | 物件  (object) 
+複合型別 (compound type) ::陣列  (array) | 物件  (object) 
 
 
 #### 字串  (string) :由字母、數字、文字、符號所組成的單字、片語或句子
