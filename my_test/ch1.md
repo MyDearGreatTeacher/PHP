@@ -58,6 +58,8 @@
 
 >* 多行註解:PHP 提供  /* */  一種符號
 
+>* 保留字
+
 ### lab3:
 
 --- 
@@ -74,6 +76,30 @@
   </body>
 </html>
 --- 
+
+# PHP的資料型態與運算子
+
+PHP 支援下列八種型別： 
+
+>* 純量型別  (scalar type) : 整數 integer | 浮點數 (float、double) | 布林 boolean | 字串 string | 特殊型別  (special type) 
+ NULL 資源  (resource) 
+ 
+>* 複合型別 (compound type) ::陣列  (array) | 物件  (object) 
+
+
+### 字串  (string) :由字母、數字、文字、符號所組成的單字、片語或句子
+
+可使用下列四種方法指定字串： 
+
+>* 單引號字串  (single quoted string) 
+
+>* 雙引號字串  (double quoted string) 
+
+>* heredoc 語法 
+
+>* nowdoc 語法 
+
+
 
 ----------------------------------
 lab2:
