@@ -62,7 +62,7 @@
 
 ### lab3:
 
---- 
+```
 <!doctype html>
 <html>
   <head>
@@ -75,7 +75,7 @@
     ?>
   </body>
 </html>
---- 
+```
 
 ## PHP的資料型態與運算子
 
@@ -95,13 +95,21 @@ PHP 支援下列八種型別：
 
 >* 雙引號字串  (double quoted string)    $str = "Mary";//將變數str設定為字串 "Mary" (變數的名稱前面必須加上$)
 
->* heredoc 語法 
+>* heredoc 語法 :由 <<< 運算子開始+ 一個識別字 + 換行+ 字串+最後以同一個識別字結尾
+```
+<?php
+      echo <<< STR1
+My name is Jean.<br>
+Happy birthday to You!
+STR1;
+    ?>
+```
 
 >* nowdoc 語法 
 
 
 
-----------------------------------
+
 lab2:
 ----------------------------------
 
