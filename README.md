@@ -47,15 +47,17 @@
 
 # week 3:PHP表單及檔案處理
 
->* HTTP get方法及表單處理
+>* HTTP get方法及PHP獲取表單傳遞數據的方法
 
->* HTTP post方法及表單處理
+>* HTTP post方法及PHP獲取表單傳遞數據的方法
+
+>* PHP對URL傳遞的參數進行編碼
 
 >* 目錄存取
 
 >* 檔案存取::讀寫一般文字檔
 
->* 圖像處理{進修主題}
+>* 圖像處理{進修主題}:GD庫 | Jpgraph庫
 
 >* HTTP 檔案上傳處理
 
@@ -73,6 +75,24 @@
 
 >* PHP XML和JSON處理
 
->* PHP框架
+### PHP框架
 
-MVC與ThinkPHP框架 
+>* Zend Framework
+
+>* Laravel 5 框架
+
+>* Smarty與MVC
+
+>* MVC與ThinkPHP框架 
+
+# 小型專案開發
+
+>* PHP MySQL開發論壇實戰
+
+>* 開發飯店管理系統網站
+
+>* 
+
+>* 
+
+>* 
