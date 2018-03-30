@@ -150,9 +150,22 @@ is_resource(arg)、 is_array(arg)、 is_object(arg)、 is_numeric(arg)、 is_sca
 
  ` __NAMESPACE__` 命名空間名稱
 
-  
- 
-
+``` 
+//constants.php
+<!doctype html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	</head>
+  <body>
+    <?php
+      echo __FILE__;
+      echo "<br>";
+      echo __DIR__;
+    ?>
+  </body>
+</html>
+```
 
 ## PHP的運算子
 
@@ -160,9 +173,12 @@ is_resource(arg)、 is_array(arg)、 is_object(arg)、 is_numeric(arg)、 is_sca
 
 >* 字串運算子(.):連接字串
 ```
-$a = “PHP” . “5";		//將變數a的值設定為字串 "PHP5"
-$b = "PHP" . 5;		//將變數b的值設定為字串 "PHP5”
+$a = "PHP" . "7";		//將變數a的值設定為字串 "PHP7"
+$b = "PHP" . 7;		//將變數b的值設定為字串 "PHP7”
 ```
+
+>* 遞增/遞減運算子
+
 
 lab2:
 ----------------------------------
