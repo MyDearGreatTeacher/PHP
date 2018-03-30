@@ -91,7 +91,7 @@ PHP 支援下列八種型別：
 
 可使用下列四種方法指定字串： 
 
->* 單引號字串  (single quoted string) 
+>* 單引號字串  (single quoted string)   echo('C:\\Win');  echo('生日快樂！');
 
 >* 雙引號字串  (double quoted string) 
 
