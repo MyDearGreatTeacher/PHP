@@ -63,7 +63,7 @@
 
 # week 4: Cookie與Session
 
-# week 5: PHP存取資料庫
+# week 5: 使用PHP存取資料庫
 
 ## 使用PHP存取MySQL資料庫
 
