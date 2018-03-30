@@ -1,3 +1,22 @@
+# 一維陣列
+
+## 建立一維陣列
+
+直接指派::$my_array[0] = 100;
+
+
+使用array() 函式
+```
+$my_array = array();
+$my_array = array('台北', '紐約', '東京');
+$my_array = array('Taiwan' => '台北', 'USA' => '紐約', 'Japan' => '東京');
+
+
+```
+
+
+
+
 
 # PHP陣列相關函式(依照功能劃分)
 ```
@@ -40,7 +59,7 @@ mixed array_reduce ( array input, callback function [, int initial] ):用回呼�
 number array_product ( array array ):計算陣列中所有值的乘積
 number array_sum ( array array ):將陣列中的所有值的和以整數或浮點數的結果返回。
 
-2>查找數據;
+2>查找資料;
 bool array_key_exists ( mixed key, array search ):檢查給定的鍵名或索引是否存在於陣列中
 bool isset ( mixed var [, mixed var [, ...]] ):檢測變數是否設置
 bool in_array ( mixed needle, array haystack [, bool strict] ):檢查陣列中是否存在某個值
@@ -109,6 +128,7 @@ array array_uintersect_uassoc ( array array1, array array2 [, array ..., callbac
 array array_intersect_key ( array array1, array array2 [, array ...] ):使用鍵名比較計算陣列的交集
 array array_intersect_ukey ( array array1, array array2 [, array ..., callback key_compare_func] )
 :用回呼函數比較鍵名來計算陣列的交集
+
 3.並集;
 array array_merge ( array array1 [, array array2 [, array ...]] ):
 將一個或多個陣列的單元合併起來，一個陣列中的值附加在前一個陣列的後面。返回作為結果的陣列。
@@ -116,8 +136,6 @@ array array_merge_recursive ( array array1 [, array ...] )
 將一個或多個陣列的單元合併起來，一個陣列中的值附加在前一個陣列的後面。返回作為結果的陣列。 
 array array_combine(array keys, array values)(php5) 函數;
 將兩個陣列資料合併生成一個新的陣列。一個陣列值為新陣列的索引，一個陣列為陣列的值 ,必須是一維陣列;
-
-
 
 6.陣列消除;
 unset(array)
@@ -130,7 +148,6 @@ explode(string separator, string string):將字元轉換為陣列;
 implode(string separator, array array):將陣列轉換為字串;
 
 8.陣列運行符;
-
 
 陣列加
 $a + $b $a 和 $b 的聯合。
