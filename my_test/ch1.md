@@ -133,19 +133,20 @@ is_resource(arg)、 is_array(arg)、 is_object(arg)、 is_numeric(arg)、 is_sca
 預先定義的常數predefined constant
 
 PHP 內建數個預先定義的常數  (predefined constant)
+
 ` __LINE__ `  檔案的行數
 
-  __FILE__ 檔案名稱與完整路徑
+`  __FILE__ `檔案名稱與完整路徑
   
-  __DIR__ 檔案所在的目錄
+`  __DIR__ `檔案所在的目錄
   
-  __FUNCTION__ 函式名稱
+ ` __FUNCTION__` 函式名稱
 
-  __CLASS__ 類別名稱
+`  __CLASS__` 類別名稱
   
-  __METHOD__ 方法名稱
+`  __METHOD__` 方法名稱
 
-  __NAMESPACE__ 命名空間名稱
+ ` __NAMESPACE__` 命名空間名稱
 
   
  
