@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>我的jQuery Mobile程式</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>  
+    <div data-role="page">
+      <div data-role="header">
+	    <h1>個人資訊</h1>
+      </div>
+      <div data-role="content">
+        <div data-role="fieldcontain">
+		  <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>您最喜歡哪種水果？</legend>
+            <input type="radio" name="fruit" id="kind1" value="peach">
+            <label for="kind1">水蜜桃</label>
+            <input type="radio" name="fruit" id="kind2" value="apple">
+            <label for="kind2">蘋果</label>
+			<input type="radio" name="fruit" id="kind3" value="banana">
+            <label for="kind3">香蕉</label>
+          </fieldset>
+		</div>	
+	  </div>      
+    </div>
+  </body>
+</html>

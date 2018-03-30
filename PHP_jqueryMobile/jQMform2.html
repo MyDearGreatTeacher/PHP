@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>我的jQuery Mobile程式</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>  
+    <div data-role="page">
+      <div data-role="header">
+	    <h1>個人資訊</h1>
+      </div>
+      <div data-role="content">
+        <div data-role="fieldcontain">
+		  <label for="useremail">輸入E-mail：</label>
+		  <input type="email" id="useremail">
+		  <label for="userurl">輸入網址：</label>
+		  <input type="url" id="userurl">
+		  <label for="usersearch">輸入搜尋關鍵字：</label>
+		  <input type="search" id="usersearch">
+		  <label for="usertel">輸入電話：</label>
+		  <input type="tel" id="usertel">
+		  <label for="usernumber">輸入數字1-10：</label>
+		  <input type="number" id="usernumber" max="10" min="1">
+		  <label for="userrange">選擇數字1-10：</label>
+		  <input type="range" id="userrange" max="10" min="1">
+		</div>	
+	  </div>      
+    </div>
+  </body>
+</html>

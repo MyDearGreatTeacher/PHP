@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>我的jQuery Mobile程式</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>  
+    <div data-role="page" id="firstPage" data-title="第一頁">
+      <div data-role="header" data-theme="b">
+	    <h1>航海王</h1>
+      </div>
+      <div data-role="content">
+	    <p>這是第一頁，前往<a href="#secondPage">第二頁</a>。</p>
+	  </div>
+      <div data-role="footer"  data-theme="b">
+	    <h4>&copy;快樂影視</h4>
+	  </div>
+    </div>
+    <div data-role="page" id="secondPage" data-title="第二頁">
+      <div data-role="header"  data-theme="b">
+	    <h1>航海王</h1>
+      </div>
+      <div data-role="content">
+	    <p>這是第二頁，返回<a href="#firstPage">第一頁</a>。</p>
+	  </div>
+      <div data-role="footer" data-theme="b">
+	    <h4>&copy;快樂影視</h4>
+	  </div>
+    </div>   	
+  </body>
+</html>
