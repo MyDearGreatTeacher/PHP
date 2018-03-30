@@ -212,17 +212,43 @@ $b = "PHP" . 7;		//將變數b的值設定為字串 "PHP7”
 
 ```
 
-lab2:
-----------------------------------
+## 運算子的優先順序 
 
+##  PHP 的輸出函式
 
+>* echo str1 [, str2 [, str3…]]
+```
+//output1.php
+<?php
+ echo '<i>Hello!</i><br>';
+ echo '生日', '快樂', '<br>';
+ echo '<a href="defualt.htm">回首頁</a>';
+?>
+```
+>* print str
 
+>* var_dump(var1 [, var2 [, var3…]])
 
-----------------------------------
-lab2:
-----------------------------------
+PHP var_dump 函式的功能是用來印出變數的相關訊息於螢幕上，例如變數的值或是變數的種類，var_dump 可以判斷一般字串變數以及陣列變數
 
+使用方式很簡單，僅需將要印出的變數填入 var_dump 函式即可，函式會直接輸出結果，沒有返回值。
+```
+//var_dump.php
+<!doctype html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>	
+  <body>
+    <?php
+      $a = 1.1;
+      $b = TRUE;
+      $c = 'Hello!';
+      var_dump($a, $b, $c);
+    ?>
+  </body>
+</html>
 
-
+```
 
 
