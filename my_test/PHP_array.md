@@ -10,9 +10,17 @@
 $my_array = array();
 $my_array = array('台北', '紐約', '東京');
 $my_array = array('Taiwan' => '台北', 'USA' => '紐約', 'Japan' => '東京');
-
-
 ```
+
+## 一維陣列的存取:透過鍵指定所要存取的元素
+```
+$my_array = array('Taiwan' => '台北', 'USA' => '紐約', 'Japan' => '東京');
+$my_array['Taiwan']
+$my_array['USA']
+$my_array['Japan']
+```
+
+
 
 
 
