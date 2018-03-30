@@ -1,8 +1,8 @@
 # PHP
 
-## week 1:建置你的PHP學習環境
+# week 1:建置你的PHP學習環境
 
-## PHP@Windows
+### PHP@Windows
 
 >* lab 1:使用xampp server
 
@@ -14,13 +14,13 @@
 
 >* lab 5:Building Video Streaming Server with ReactPHP http://sergeyzhuk.me/2017/07/17/reatcphp-http-server/
 
-## PHP@Linux
+###  PHP@Linux
 
 >* Ubuntu Linux 16.04 LTS
 
 >* Kali Linux 2018.1
 
-## 建置你的PHP網站安全學習環境
+###  建置你的PHP網站安全學習環境
 
 >* lab 1:安裝DVWA網站漏洞平台 http://www.dvwa.co.uk/
 
