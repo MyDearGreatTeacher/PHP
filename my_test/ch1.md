@@ -128,11 +128,13 @@ is_resource(arg)、 is_array(arg)、 is_object(arg)、 is_numeric(arg)、 is_sca
 
 ## 變數與常數
 
-使用者自訂常數:使用 define()  函式  define("PI", 3.14); 
+### 使用者自訂常數:
 
-預先定義的常數predefined constant
+使用 define()  函式  define("PI", 3.14); 
 
-PHP 內建數個預先定義的常數  (predefined constant)
+### 預先定義的常數predefined constant
+
+ PHP 內建數個預先定義的常數  (predefined constant)
 
 ` __LINE__ `  檔案的行數
 
@@ -154,6 +156,13 @@ PHP 內建數個預先定義的常數  (predefined constant)
 
 ## PHP的運算子
 
+>* 算術運算子
+
+>* 字串運算子(.):連接字串
+```
+$a = “PHP” . “5";		//將變數a的值設定為字串 "PHP5"
+$b = "PHP" . 5;		//將變數b的值設定為字串 "PHP5”
+```
 
 lab2:
 ----------------------------------
