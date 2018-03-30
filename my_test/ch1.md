@@ -115,6 +115,16 @@ STR1;
 ```
 >* nowdoc 語法 
 
+### 檢查是否為某種資料型態的函式
+
+gettype(arg) 
+
+is_integer(arg)、is_int(arg)、is_long(arg) 、is_float(arg)、is_real(arg)、is_bool(arg)、is_string(arg)、is_null(arg)
+
+is_resource(arg)、 is_array(arg)、 is_object(arg)、 is_numeric(arg)、 is_scalar(arg) 
+
+### 資料型態的轉換
+
 
 
 
