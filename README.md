@@ -30,7 +30,11 @@
 
 # week 2:PHP基本語法
 
+>* {陣列|數組}資料(Array)處理
+
 >* 字串處理
+
+>* 時間與日期處理及驗證
 
 >* 包含語句:include語句| include_once 語句 | require語句 |require_once語句 
 
@@ -38,12 +42,20 @@
 
 >* 魔術方法::__set()和__get()| __isset() | __unset()|__call() | __ toString() |自動加載 __autoload() 方法 
 
- 
-# week 3:PHP表單及檔案上傳處理
+# week 3:善用PHP的物件導向技術
 
->* HTTP get方法 及表單處理
 
->* HTTP post方法 及表單處理
+# week 3:PHP表單及檔案處理
+
+>* HTTP get方法及表單處理
+
+>* HTTP post方法及表單處理
+
+>* 目錄存取
+
+>* 檔案存取::讀寫一般文字檔
+
+>* 圖像處理{進修主題}
 
 >* HTTP 檔案上傳處理
 
