@@ -1,6 +1,6 @@
 # 一維陣列
 
-## 建立一維陣列
+## 一維陣列的建立
 
 直接指派::$my_array[0] = 100;
 
@@ -20,10 +20,35 @@ $my_array['USA']
 $my_array['Japan']
 ```
 
+## 多維陣列的建立
 
+直接指派::$3dim_array[1][2]['name'] = '我的恩師';
 
+使用array() 函式:
+```
+$my_array = array(array('玫瑰', '蘭花', '菊花'), array('蘋果', '白鳳', '香蕉', '葡萄'));
+```
 
+## 多維陣列的存取:透過鍵指定所要存取的元素
 
+## 多維陣列的排序:
+```
+<?php
+  function compare($a, $b) 
+  {
+    return strcmp($a['color'], $b['color']);
+  }    
+ 
+  $colors[0]['color'] = 'red';
+  $colors[1]['color'] = 'green';
+  $colors[2]['color'] = 'blue';
+ 
+  usort($colors, 'compare');
+ 
+  while (list($key, $value) = each($colors))
+    echo "\$colors[$key]: ".$value['color'].'<br>';
+?>
+```
 
 
 # PHP陣列相關函式(依照功能劃分)
