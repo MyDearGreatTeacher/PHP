@@ -77,7 +77,7 @@ do...while
   </body>
 </html>
 ```
-switch:比較下列兩個程式
+## switch:比較下列兩個程式
 
 ```
 <html> 
@@ -137,5 +137,42 @@ switch:比較下列兩個程式
   </body>
 </html>
 ```
+
+### 每一次程式設計都會考的題目:少了break的程式會出現何種錯誤
+
+```
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <?php
+      $number = 1;				//假設變數number的值為3
+      switch($number)
+      {
+        case 1:      			//當變數number的值為1時
+          echo 'ONE';
+
+        case 2:    				//當變數number的值為2時
+          echo 'TWO';
+
+        case 3:    				//當變數number的值為3時
+          echo 'THREE';
+
+        case 4:    				//當變數number的值為4時
+          echo 'FOUR';
+          break;
+        case 5:    				//當變數number的值為5時
+          echo 'FIVE';
+          break;
+        default:    			//當變數number的值為1-5以外的數字時
+          echo '數值超過範圍！';
+      }
+    ?>
+  </body>
+</html>
+```
+
 
 [1]判斷結構 (decision structures):switch
