@@ -21,11 +21,11 @@ function submit() {
 
 function getCookie(name)
 {
-var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-if(arr=document.cookie.match(reg))
-return unescape(arr[2]);
-else
-return null;
+	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+	if(arr=document.cookie.match(reg))
+	  return unescape(arr[2]);
+	else
+	  return null;
 }
 </script>
 <button onclick='submit()'>送出</button>
