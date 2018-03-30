@@ -251,4 +251,11 @@ PHP var_dump 函式的功能是用來印出變數的相關訊息於螢幕上，�
 
 ```
 
-
+var_dump 函式可一次處理多個變數
+```
+<?php
+　$EX_A = array(8,9,array('apple','orange'));
+　$EX_B = 6.8;
+　var_dump($EX_A,$EX_B);
+?>
+```
