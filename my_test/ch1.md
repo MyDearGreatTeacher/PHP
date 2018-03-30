@@ -93,7 +93,7 @@ PHP 支援下列八種型別：
 
 >* 單引號字串  (single quoted string)   echo('C:\\Win');  echo('生日快樂！');
 
->* 雙引號字串  (double quoted string) 
+>* 雙引號字串  (double quoted string)    $str = "Mary";//將變數str設定為字串 "Mary" (變數的名稱前面必須加上$)
 
 >* heredoc 語法 
 
