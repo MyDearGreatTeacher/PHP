@@ -1,3 +1,4 @@
+# 程式碼架構分析:
 
 只有底下主程式(index.html)+四張圖片
 
@@ -80,6 +81,40 @@
 </html>
 ```
 
-# 主程式(index.html)分析:<head>部分
+# 主程式(index.html)分析:head部分=載入jquery+ script
+
+### 載入jquery
+
+```
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+  ```
   
-# 主程式(index.html)分析:<body>部分
+### PHP script:用來控制前一頁及下一頁的顯示功能
+
+```
+  	<script>
+	  var i = 0;//索引
+      var img = new Array("piece1.jpg", "piece2.jpg", "piece3.jpg");//三張圖片
+      var msg = new Array("「喬巴」－夢想成為能治百病的神醫。", 
+	    "「索隆」－夢想成為世界第一的劍士。", 
+		"「佛朗基 」－傳說中的船匠湯姆的弟子，打造了千陽號。"); //三張圖片對應的說明
+		
+	  function prev(){ //前一頁
+	    i--; 
+	    if (i < 0) {i = 2;}
+	    $("#roleimg").attr("src", img[i]);		
+		$("#rolemsg").text(msg[i]);
+      }
+      
+	  function next(){  //下一頁
+	    i++; 
+	    if (i > 2) {i = 0;}
+	    $("#roleimg").attr("src", img[i]);		
+		$("#rolemsg").text(msg[i]);
+      }
+	</script>
+```
+
+# 主程式(index.html)分析:body部分
