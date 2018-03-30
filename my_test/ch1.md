@@ -81,9 +81,18 @@
 
 PHP 支援下列八種型別： 
 
->* 純量型別  (scalar type) : 整數 integer | 浮點數 (float、double) | 布林 boolean | 字串 string | 特殊型別  (special type) 
- NULL 資源  (resource) 
+>* 純量型別  (scalar type) : 整數 integer | 浮點數 (float、double) | 布林 boolean | 字串 string | 
+
+>* 特殊型別  (special type) :: NULL  資源  (resource) 
  
+  資料型態為 NULL 的變數:只有一種值－常數 NULL 
+
+  資源(resource)資料型態::代表的是一種特殊值，用來指向 PHP 程式的外部資源
+```
+$my_resource = mysql_connect();
+```
+
+
 >* 複合型別 (compound type) ::陣列  (array) | 物件  (object) 
 
 
@@ -95,7 +104,7 @@ PHP 支援下列八種型別：
 
 >* 雙引號字串  (double quoted string)    $str = "Mary";//將變數str設定為字串 "Mary" (變數的名稱前面必須加上$)
 
->* heredoc 語法 :由 <<< 運算子開始+ 一個識別字 + 換行+ 字串+最後以同一個識別字結尾
+>* heredoc 語法 :由 <<< 運算子開始+ 一個識別字(STR1) + 換行+ 字串+最後以同一個識別字(STR1)結尾
 ```
 <?php
       echo <<< STR1
@@ -104,7 +113,6 @@ Happy birthday to You!
 STR1;
     ?>
 ```
-
 >* nowdoc 語法 
 
 
