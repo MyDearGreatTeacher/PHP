@@ -21,7 +21,7 @@
 
 ### lab2:
 
-demo.inc
+[1]PHP 程式放在外部檔案 demo.inc 
 
 ```
 <?php
@@ -29,7 +29,7 @@ demo.inc
   phpinfo();
 ?>
 ```
-使用include_once()函式呼叫 demo.inc
+[2]使用include_once()函式呼叫 demo.inc
 
 ```
 <!doctype html> 
@@ -47,10 +47,10 @@ demo.inc
 --- 
 
 
-----------------------------------
-lab3:
-----------------------------------
 
+### lab3:
+
+--- 
 <!doctype html>
 <html>
   <head>
@@ -63,7 +63,7 @@ lab3:
     ?>
   </body>
 </html>
-
+--- 
 
 ----------------------------------
 lab2:
