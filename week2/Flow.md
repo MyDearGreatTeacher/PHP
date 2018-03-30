@@ -1,6 +1,6 @@
 # PHP的流程控制
 
-##判斷結構 (decision structures)
+## 判斷結構 (decision structures)
 
 if (if...、if...else...、if...elseif...)
 
