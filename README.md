@@ -16,7 +16,7 @@
 
 ###  PHP@Linux
 
->* Ubuntu Linux 16.04 LTS
+>* Ubuntu Linux 16.04 LTS(使用上課提供的image)
 
 >* Kali Linux 2018.1
 
