@@ -65,11 +65,17 @@
 
 # week 4: Cookie與Session
 
-# week 5: 使用PHP存取資料庫
+# week 5: 資料庫(database)
 
-## 使用PHP存取MySQL資料庫
+### Mysql資料庫(SQL)
 
-## 使用PHP存取Redis資料庫
+### Mongodb資料庫(NoSQL)
+
+# week 6: 使用PHP存取資料庫
+
+### 使用PHP存取MySQL資料庫
+
+### 使用PHP存取Mongodb資料庫
 
 # 進階主題
 
@@ -110,11 +116,5 @@
 # 中型專案開發
 
 >* PHP MySQL開發論壇實戰
-
 >* 開發飯店管理系統網站
 
->* 
-
->* 
-
->* 
