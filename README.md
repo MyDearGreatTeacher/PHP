@@ -14,6 +14,10 @@
 >* lab 4:安裝woocommerce 電子商務平台
 >* lab 5:Building Video Streaming Server with ReactPHP http://sergeyzhuk.me/2017/07/17/reatcphp-http-server/
 
+Curl ==> [HFS:Http File Server](http://www.rejetto.com/hfs/)
+
+https://briian.com/6489/
+
 ###  PHP@Linux
 
 >* Ubuntu Linux 16.04 LTS(使用上課提供的image)
