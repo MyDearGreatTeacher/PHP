@@ -1,6 +1,6 @@
 # PHP
 
-[教科書PHP7&MySQL跨裝置網站開發：超威範例集(第二版)](http://www.books.com.tw/products/0010732581)
+[教科書:PHP7&MySQL跨裝置網站開發：超威範例集(第二版)](http://www.books.com.tw/products/0010732581)
 
 [參考書:跨裝置網頁設計：HTML5、CSS3、JavaScript、jQuery、Bootstrap、jQuery Mobile(第三版)](http://www.books.com.tw/products/0010761760)
 
