@@ -5,13 +5,9 @@
 ### PHP@Windows
 
 >* lab 1:使用xampp server
-
->* lab 2:使用appserv
-
+>* lab 2:使用appser
 >* lab 3:安裝wordpress 部落格平台
-
 >* lab 4:安裝woocommerce 電子商務平台
-
 >* lab 5:Building Video Streaming Server with ReactPHP http://sergeyzhuk.me/2017/07/17/reatcphp-http-server/
 
 ###  PHP@Linux
