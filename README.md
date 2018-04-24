@@ -8,7 +8,7 @@
 
 ### PHP@Windows
 
->* lab 1:使用xampp server
+>* lab 1:使用[xampp server](https://www.apachefriends.org/zh_tw/index.html)
 >* lab 2:使用appser
 >* lab 3:安裝wordpress 部落格平台
 >* lab 4:安裝woocommerce 電子商務平台
