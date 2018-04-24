@@ -18,6 +18,8 @@
 
 https://briian.com/6489/
 
+[Curl](https://curl.haxx.se/download.html) ==>[httpbin]https://httpbin.org/
+
 ###  PHP@Linux
 
 >* Ubuntu Linux 16.04 LTS(使用上課提供的image)
