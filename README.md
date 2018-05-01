@@ -34,6 +34,9 @@ https://briian.com/6489/
 
 >* lab3:安裝bwapp網站漏洞平台 https://sourceforge.net/projects/bwapp/
 
+
+D:\xampp\htdocs\dragon
+
 # week 2:PHP基本語法
 
 >* {陣列|數組}資料(Array)處理
