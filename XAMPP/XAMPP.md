@@ -51,4 +51,4 @@ echo "<br>";
 echo "我車的品牌是 {$cars[0]}";
 ?>
 ```
-![練習作品](pic/ex2.png)
+![練習作品](pic/ex2_OK.png)
