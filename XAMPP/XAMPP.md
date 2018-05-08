@@ -13,3 +13,9 @@
 # XAMPP目錄結構
 
 D:\xampp
+
+D:\xampp\htdocs===>放你的網站程式
+
+建一個目錄把測試程式放在此目錄
+
+D:\xampp\htdocs\dragon
