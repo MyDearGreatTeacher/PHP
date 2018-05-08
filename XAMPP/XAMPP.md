@@ -4,6 +4,17 @@
 >* XAMPP允許用戶可以在自己的電腦上輕易的建立網頁伺服器。
 >* https://zh.wikipedia.org/wiki/XAMPP
 
+v7.2.4 [2018/4/21]
+本版本包含 
+>* Apache 2.4.33
+>* MariaDB 10.1.31
+>* PHP 7.2.4
+>* phpMyAdmin 4.8.0….
+
+另有使用 PHP v5.6.35 版的程式，可依需求選擇 PHP 5 或 PHP 7.2 來用。
+
+
+
 # XAMPP安裝
 
 # 啟動XAMPP
