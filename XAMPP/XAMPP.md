@@ -34,3 +34,20 @@ D:\xampp\htdocs\dragon
 開啟瀏覽器
 
 http://127.0.0.1:8008/dashboard/
+
+# 程式範例
+
+### 程式範例
+```
+<?php
+$txt1="學習 PHP";
+$txt2="RUNOOB.COM";
+$cars=array("Volvo","BMW","Toyota");
+ 
+echo $txt1;
+echo "<br>";
+echo "在 $txt2 學習 PHP ";
+echo "<br>";
+echo "我車的品牌是 {$cars[0]}";
+?>
+```
