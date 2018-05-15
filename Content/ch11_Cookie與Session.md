@@ -40,6 +40,25 @@ Cookie常用於以下3個方面：
 
 ```
 
+11.1.3.讀取Cookie 
+
+```
+<?php
+date_default_timezone_set("Etc/GMT-8");
+if(!isset($_COOKIE["visittime"])){		//如果Cookie不存在
+ 	setcookie("visittime",date("y-m-d H:i:s")); 	//設置一個Cookie變數
+	echo "歡迎您第一次訪問網站！"."<br>";		//輸出字串
+}else{			//如果Cookie存在
+	setcookie("visittime",date("y-m-d H:i:s"),time()+60); 	//設置帶Cookie失效時間的變數
+    echo "您上次訪問網站的時間為：".$_COOKIE["visittime"];	//輸出上次訪問網站的時間
+	echo "<br>";			//輸出回車符
+}
+	echo "您本次訪問網站的時間為： ".date("y-m-d H:i:s");	//輸出當前的存取時間
+?>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+```
+
+
 ### 創建Cookie
 
 在PHP中通過setcookie()函數創建Cookie。
@@ -167,6 +186,144 @@ Session設置時間
 在大多網站的開發過程中，需要對管理員和普通使用者對操作網站的許可權進行劃分。下面通過具體的實例進行講解。
      首先通過使用者登錄頁面提交的用戶名來驗證用戶操作網站的許可權 。
 
+```
+[1]表單
+
+```
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>博客用戶登錄</title>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+body{ font-size:12px;}
+-->
+</style>
+</head>
+<body>
+<script language="javascript">
+	function check(form){
+		if(form.user.value==""){
+			alert("請輸入用戶名");form.user.focus();return false;		
+		}
+		if(form.pwd.value==""){
+			alert("請輸入密碼");form.pwd.focus();return false;
+		}
+		form.submit();
+	}
+</script>
+<form name="form1" method="post" action="default.php">
+  <table width="521" height="394" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top" background="images/login.jpg"><table width="521" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="262" height="218">&nbsp;</td>
+            <td width="259">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="24" align="right">用戶名：</td>
+            <td height="24" align="left"><input name="user" type="text" id="user" size="20"></td>
+          </tr>
+          <tr>
+            <td height="24" align="right">密&nbsp;&nbsp;碼：</td>
+            <td height="24" align="left"><input name="pwd" type="password" id="pwd" size="20"></td>
+          </tr>
+          <tr align="center">
+            <td height="24" colspan="2"><input type="submit" name="Submit" value="提交" onClick="return check(form);">
+            &nbsp;&nbsp;
+            <input type="reset" name="Submit2" value="重填"></td>
+          </tr>
+          <tr>
+            <td height="76" align="right"><span class="style1">超級用戶：tsoft<br>
+  密&nbsp;&nbsp;&nbsp;&nbsp;碼：111&nbsp;&nbsp;</span></td>
+            <td><span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通用戶：zts<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;碼：000</span></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+```
+
+default.php
+
+```
+<?php
+session_start();
+$_SESSION['user']=$_POST['user'];
+$_SESSION['pwd']=$_POST['pwd'];
+if($_SESSION['user']==""){
+  echo "<script language='javascript'>alert('請通過正確的途徑登錄本系統！');history.back();</script>";
+}
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="../CSS/style.css" rel="stylesheet">
+<title>通過SESSION判斷用戶的操作許可權</title>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+*{ font-size:12px;}
+-->
+</style>
+</head>
+<body >
+
+<TABLE width="856" height="498" align="center" cellPadding=0 cellSpacing=0> 
+    <TR> 
+      <TD height="258" valign="baseline" style="BACKGROUND-IMAGE: url(images/bg.jpg); VERTICAL-ALIGN: middle; HEIGHT: 50px; TEXT-ALIGN: center"><TABLE width="856" height="419" cellPadding=0 cellSpacing=0 >
+          <TR>
+            <TD height="176" colspan="6" 
+          style="VERTICAL-ALIGN: text-top; WIDTH: 80px; HEIGHT: 115px; TEXT-ALIGN: right"></TD>
+          </TR>
+          <TR>
+            <TD height="214" align="center" valign="top">
+              <TABLE  align="center" cellPadding=0 cellSpacing=0 >
+                  <TR align="center" valign="middle">
+                    <TD  style="WIDTH: 140px; COLOR: red;">當前用戶:&nbsp;<?php if($_SESSION['user']=="tsoft" && $_SESSION['pwd']=="111"){echo "管理員";}else{echo "普通用戶";}?>&nbsp;&nbsp;</TD>
+                    <TD width="70"><a href="#">博客首頁</a></TD>
+                    <TD width="70">|&nbsp;<a href="#" >我的文章</a></TD>
+                    <TD width="70">|&nbsp;<a href="#" >我的相冊</a></TD>
+                    <TD width="70">|&nbsp;<a href="#">音樂線上</a></TD>
+                    <TD width="70">|&nbsp;<a href="#">修改密碼</a></TD>
+                    <?php
+					  if($_SESSION['user']=="tsoft" && $_SESSION['pwd']=="111"){
+					?>
+                    <TD width="70">|&nbsp;<a href="default.php">用戶管理</a></TD>
+                    <?php  
+					  }
+					?>
+                </TR>
+            </TABLE>
+              <br>
+              <br>
+ 女人永遠也不知道男人為什麼不對她說“我愛你”這3個字?     <br>
+ <br>
+ <br> <br>
+因為他們知道並不是不想說，只是他們自己明白，一萬句我愛你用在身上也不夠。 <br>
+</TD>
+          </TR>
+      </TABLE>
+      歡迎訪問博客網 請使用IE 6.0 在1024×768解析度下流覽本網站&nbsp;<a href="safe.php">註銷用戶</a></TD>
+    </TR> 
+</TABLE> 
+</body>
+</html>
+
+```
+```
+<?php
+session_start();
+unset($_SESSION['user']);
+unset($_SESSION['pwd']);
+session_destroy();
+header("location:index.php");
+?>
 ```
 
 ### Session高級應用 
